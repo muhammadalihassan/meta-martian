@@ -9,7 +9,8 @@ import Header from './Extends/Header';
 import Footer from './Extends/Footer';
 import reportWebVitals from './reportWebVitals';
 import About from "./Views/About/Index";
-import video from './Assets/main-bg.jpg';
+// import video from './Assets/main-bg.jpg';
+import video from './Assets/bg.mp4';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
 import $ from "jquery";
@@ -58,10 +59,12 @@ import $ from "jquery";
 ReactDOM.render(
   <BrowserRouter basename="/">
       <div className='bg-video'>
-
-<img src={video} />
+      <video loop autoplay="" muted>
+  <source src={video} type="video/mp4" />
+</video>
+{/* <img src={video} /> */}
 </div>
-  <div className='overlay' ontouchstart={() => {document.getElementById("close-button").click()}} onscroll={() => {document.getElementById("close-button").click()}}>
+  <div className='overlays' ontouchstart={() => {document.getElementById("close-button").click()}} onscroll={() => {document.getElementById("close-button").click()}}>
   <header className='pageheader'>
       <Header />
     </header>

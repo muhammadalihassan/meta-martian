@@ -1,6 +1,9 @@
 import sitelogo from '../Assets/logo-main.png';
 import { Container, Row, Col, Form, Button, Navbar, Nav } from "react-bootstrap";
-
+import land from '../Assets/land.png';
+import map from '../Assets/map.png';
+import home from '../Assets/home.png';
+import create from '../Assets/create.png';
 import { Link } from 'react-router-dom';
 import React, { Component, useState, useEffect } from 'react';
 import ReactDOM, { render } from 'react-dom';
@@ -8,6 +11,7 @@ import Section from './Switch.js'
 import ScrollToTop from './ScrollToTop';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid} from '@fortawesome/fontawesome-svg-core/import.macro';
+
 // SITE LOGO
 
 
@@ -23,28 +27,47 @@ function Footer() {
   }
   return (
     <div className="main-footer">
-      <Container>
-      <div className="footer-top">
-        <img src={sitelogo} />
-      </div>
-      <div className='footer-btm'>
-      <p><FontAwesomeIcon icon={solid('envelope')} /> <a href='mailto:inquiry@killerclubhouse.io'>inquiry@killerclubhouse.io</a></p>
-        <p>© 2022 Killer Club House. All Rights Reserved</p>
-        {/* <ul>
-              <li>
-                <a href='https://twitter.com/KillerClubhouse' className='twt' target='_blank'>
-                   <FontAwesomeIcon icon={solid('angles-up')} />
-                </a>
-              </li>
-              <li>
-                <a href='https://discord.gg/X5TjRtkg' className='twi' target='_blank'>
-                   <FontAwesomeIcon icon={brands('discord')} />
-                </a>
-              </li>
-        </ul> */}
-      </div>
-      </Container>
-      <ScrollToTop />
+      <div className='side-nav-main'>
+  <ul>
+    <li>
+      <a href="javascript:void(0)">
+        <img src={home} />
+        <span>home</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:void(0)">
+        <img src={create} />
+        <span>create</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:void(0)">
+        <img src={land} />
+        <span>land</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:void(0)">
+        <img src={map} />
+        <span>map</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:void(0)">
+        <img src={create} />
+        <span>community</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:void(0)">
+        <img src={map} />
+        <span>about us</span>
+      </a>
+    </li>
+  </ul>
+</div>
+      {/* <ScrollToTop /> */}
     </div>
   );
 }

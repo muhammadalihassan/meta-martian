@@ -95,10 +95,17 @@ ul{
     top: 0;
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     width: 100%;
-    background-color: #000000db;
-    z-index: 999999999;
-    border-bottom: 4px solid #f7100285;
+    background-color: #000000ed;
+    z-index: 999;
+    border-bottom: 4px solid #c44d21;
 
+}
+.is-sticky .secondary-nav a {
+  font-size: 14px;
+}
+.is-sticky .secondary-login a {
+  min-width: 118px;
+  font-size: 14px;
 }
 @keyframes fadeInDown {
   0% {
@@ -111,21 +118,23 @@ ul{
   }
 } 
 .is-sticky .logo-main img {
-  width: 50%;
+  width: 10%;
 }
-
+.is-sticky .main-navigation {
+  margin: 0px 0 10px;
+}
 .is-sticky .logo-main {
   text-align: center;
+  padding: 10px 0 10px;
 }
 
 
-.overlay {
+.overlays {
   position: relative;
-  background-color: #04060a57;
-
+  background-color: #04060a2e;
 }
 
-.overlay:after {
+.overlays:after {
   content: '';
   background-color: #0000008f;
   width: 100%;
@@ -136,7 +145,7 @@ ul{
 }
 .logo-main {
   text-align: center;
-  margin: 30px 0;
+  padding: 30px 0;
   position: relative;
     z-index: 9999;
 }
@@ -211,11 +220,11 @@ ul{
 }
 .main-overlay-menu {
   width: 100%;
-  background-color: #000000ba;
+  background-color: #000000e6;
 }
 .side-nav-main {
   position: fixed;
-  top: 30%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 9;
@@ -268,8 +277,250 @@ ul{
   font-size: 68px;
   color: #fff;
 }
+.inner-menu .nav a:hover {
+  color: #B64123;
+}
 /* header css end */
+/* banner css start */
+.banner-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.banner-heading h2 {
+  text-transform: uppercase;
+  font-size: 100px;
+  font-family: 'medium';
+}
+.sub-h {
+  margin-left: -129px;
+  position: relative;
+}
+.banner-sec {
+  padding: 90px 0;
+}
+.banner-heading img{
+  animation: loading 100s linear infinite;
+
+}
+@keyframes loading {
+  0% { 
+    transform: rotate(0); 
+  }
+  100% { 
+    transform: rotate(180deg);
+  }
+ }
+/* banner css end */
+/* option css start */
+.all-right-container .container-fluid > .row {
+  justify-content: end;
+}
+.options .row {
+  align-items: center;
+}
+
+.opt-img img {
+  width: 100%;
+}
+
+.all-right-container {
+  padding: 120px 0;
+  overflow-x: hidden;
+
+}
+.options h6 {
+  font-size: 23px;
+  margin-bottom: 40px;
+
+}
+
+.options h4 {
+  font-size: 60px;
+  line-height: 100px;
+
+}
+.options h4 span{
+  display: block;
+
+}
+.opt-txt p {
+  font-size: 28px;
+  line-height: 52px;
+  margin-bottom: 40px;
+}
+
+.opt-txt {
+  position: relative;
+  width: 710px;
+  z-index: 99;
+
+}
+.standard-btn{
+  display: inline-block;
+  border: 3px solid #fea05a;
+  color: #fff;
+  text-decoration: none;
+  min-width: 230px;
+  text-align: center;
+  padding: 13px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.standard-btn:hover{
+  background-color: #fea05a;
+    color: #000;
+}
+/* option css end */
+/* experience css start */
+.experience-head {
+  text-align: center;
+}
+
+.experience-head h5 {
+  text-transform: uppercase;
+  font-size: 69px;
+  margin-bottom: 20px;
+}
+
+.experience-head p {
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 500px;
+  line-height: 41px;
+  margin: 0 auto;
+}
+.exp-video {
+  position: relative;
+  padding: 0 10px;
+}
+
+.exp-txt {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+    text-align: center;
+}
+.exp-txt h5 {
+  font-size: 23px;
+}
+
+.exp-txt p span {
+  display: block;
+}
+.exp-vid-main {
+  margin: 50px 0;
+}
+.experience-sec {
+  padding: 100px 0;
+}
+/* experience css end */
+/* explore mars css start */
+.explore-head {
+  text-align: center;
+}
+
+.explore-head h4 {
+  font-family: 'fisher';
+  font-weight: 700;
+  font-size: 72px;
+  letter-spacing: 7px;
+  color: #FF852A;
+}
+
+.explore-head p {
+  font-size: 25px;
+}
+.explore-gal img {
+  width: 100%;
+}
+.explore-gal {
+  position: relative;
+  margin: 12px 0px;
+
+}
+.explore-gal:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 170px;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to top, #000000cc, #3b3b3bba, #777777d4, #d0cece5e, #ffffff00);
+  z-index: 0;
+}
+.explore-gal-text {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.explore-gal-text a {
+  text-decoration: none;
+  background-color: #b1aaaad1;
+  display: inline-block;
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+  min-width: 180px;
+  text-align: center;
+  padding: 4px;
+  border-radius: 5px;
+  letter-spacing: 3px;
+}
+.explore-gal-text a:hover {
+  background-color: #c44d21c4;
+  color: #fff;
+}
+.explore-gal-text h5 {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'fisher';
+  line-height: 40px;
+  margin-bottom: 0;
+}
+
+.explore-gal-text h5 span {
+  display: block;
+}
+
+.explore-gal-text p {
+  text-align: center;
+  font-size: 17px;
+  margin: 0;
+}
+.explore-mars {
+  padding: 90px 0;
+}
+/* explore mars css end */
+/* why css start */
+.why-sec .row {
+  align-items: center;
+}
+
+.why-sec .options h4 {
+  text-transform: uppercase;
+}
+
+.why-sec .options p {
+  font-size: 22px;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+.why-sec{
+  overflow-x: hidden;
+  padding: 90px 0;
+}
+/* why css end */
 /* FOR WIDTH 1399px  */
 @media only screen and (max-width:1399px){
  

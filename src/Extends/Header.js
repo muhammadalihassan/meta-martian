@@ -2,17 +2,16 @@
 import React, { Component, useState, useEffect } from 'react';
 import ReactDOM, { render } from 'react-dom';
 import sitelogo from '../Assets/logo-main.png';
-import home from '../Assets/home.png';
-import create from '../Assets/create.png';
+
 import menu from '../Assets/menu.png';
-import land from '../Assets/land.png';
-import map from '../Assets/map.png';
+
 import { Navbar, Nav, Container, NavDropdown, Form, Button, Dropdown, FormControl } from 'react-bootstrap';
 import $ from 'jquery'
 import { Link, NavLink } from "react-router-dom";
 import Section from './Switch.js'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Marquee from "react-fast-marquee";
+
 
 function Header() {
   const [expanded, setExpanded] = useState(false);
@@ -114,46 +113,7 @@ function Header() {
         </div>
         </Offcanvas.Body>
       </Offcanvas>
-<div className='side-nav-main'>
-  <ul>
-    <li>
-      <a href="javascript:void(0)">
-        <img src={home} />
-        <span>home</span>
-      </a>
-    </li>
-    <li>
-      <a href="javascript:void(0)">
-        <img src={create} />
-        <span>create</span>
-      </a>
-    </li>
-    <li>
-      <a href="javascript:void(0)">
-        <img src={land} />
-        <span>land</span>
-      </a>
-    </li>
-    <li>
-      <a href="javascript:void(0)">
-        <img src={map} />
-        <span>map</span>
-      </a>
-    </li>
-    <li>
-      <a href="javascript:void(0)">
-        <img src={create} />
-        <span>community</span>
-      </a>
-    </li>
-    <li>
-      <a href="javascript:void(0)">
-        <img src={map} />
-        <span>about us</span>
-      </a>
-    </li>
-  </ul>
-</div>
+
       </Container>
       </div>
      
