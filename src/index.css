@@ -74,6 +74,7 @@ ul{
   padding: 0;
 }
 /* header css start */
+
 .menu-logo {
   /* text-align: center;
   position: absolute;
@@ -374,6 +375,26 @@ ul{
 }
 /* header css end */
 /* banner css start */
+.globe-img {
+  border-radius: 100%;
+  /* padding: 5px; */
+  position: relative;
+}
+
+.globe-img:after {
+  content: '';
+  position: absolute;
+  width: 99%;
+  height: 100%;
+  top: 0;
+  /* background-color: #000; */
+  left: 0;
+  right: 0;
+  border-radius: 100%;
+  background-image: linear-gradient(to top, #000000fc, #000000bf, #00000063, #00000000, #9f512900);
+  transform: rotate(38deg);
+  margin: 0 auto;
+}
 .banner-heading {
   display: flex;
   align-items: center;

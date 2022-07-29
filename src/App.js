@@ -89,7 +89,9 @@ function App() {
             <h2>
               meta
             </h2>
+            <div className='globe-img'>
             <img src={globe} />
+            </div>
             {/* <div>
               <GLTFModel src={modelPath}>
                 <AmbientLight color={0xffffff} />
