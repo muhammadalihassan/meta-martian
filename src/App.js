@@ -6,6 +6,15 @@ import globe from './Assets/globe.png';
 import mars1 from './Assets/mars1.png';
 import mars2 from './Assets/mars2.png';
 import why from './Assets/why.png';
+import liquidity from './Assets/liquidity.png';
+import creators from './Assets/creators.png';
+import p1 from './Assets/p1.png';
+import p2 from './Assets/p2.png';
+import p3 from './Assets/p3.png';
+import apps from './Assets/apps.png';
+import apple from './Assets/apple.png';
+import google from './Assets/google.png';
+import oculus from './Assets/oculus.png';
 import path from './Assets/scene.gltf';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Accordion, Tab, Nav } from 'react-bootstrap';
@@ -56,6 +65,17 @@ function App() {
       arrows: false
   };
 
+  const partners = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000,
+      arrows: false
+  };
 
 
  
@@ -399,6 +419,140 @@ buy and sell LANDS and ASSETS in The martian metaverse.</p>
                 </div>
               </Col>
             </Row>
+          </Container>
+        </div>
+        <div className='why-sec'>
+          <Container>
+            <Row>
+            <Col md={6}>
+                <div className='why-img' data-aos="fade-right">
+                  <img src={liquidity} />
+                </div>
+              </Col>
+              <Col md={6}>
+              <div className='options'>
+              <h4 >Liquidity mining</h4>
+                  <p>The martians is a virtual Metaverse where players 
+can play, build, own, and monetize their 
+virtual experiences. You can also invest your 
+crypto currency and earn more COINS</p>
+<Link as="link" to="/" className='standard-btn'>
+              sign in
+            </Link>
+                </div>
+              </Col>
+              
+            </Row>
+          </Container>
+        </div>
+        <div className='benefits-sec'>
+          <Container>
+          <div className='options'>
+            <h6>benefits</h6>
+            <h4 >WE'RE BUILDING A BETTER 
+<span>WAY TO BE TOGETHER ONLINE</span></h4>
+            <Row className='mt-4'>
+              <Col md={8}>
+                <div className='opt-txt'>
+                  <p>Meta Martian is a metaverse platform that makes it easy for creators, 
+communities and brands to launch their own unique 3D spaces 
+and share immersive social experiences.</p>
+                </div>
+              </Col>
+            </Row>
+            
+          </div>
+          </Container>
+        </div>
+        <div className='creators-sec'>
+          <Container>
+            <div className='options'>
+            <h4 >Creators are the Heart of <span>Our Metaverse</span></h4>
+            </div>
+            <div className='creators-img'>
+              <img src={creators} />
+              <div className='creators-txt'>
+                <Link as="link" to="/">apply now</Link>
+              </div>
+            </div>
+          </Container>
+        </div>
+        <div className='about sec'>
+          <Container>
+            <div className='about-div'>
+              <div className='options'>
+              <h4>
+                about <span>meta martian</span>
+              </h4>
+              </div>
+              <Col md={8}>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+y. Lorem Ipsum has been the industry's standard dummy text ever since the 15
+00s, when an unknown printer took a galley of type and scrambled it to 
+make a type specimen book. It has survived not only five century
+es, but also the leap into electronic typesetting, remaining essential
+ly unchanged. It was popularised in the 1960s with the relea
+se of Letraset sheets containing Lorem Ipsum passages, and mor
+e recently with desktop publishing software like A
+ldus PageMaker including versions of Lorem Ipsum.</p>
+              </Col>
+            </div>
+            <div className='partners-div'>
+              <h6>partnering with</h6>
+              <div className='partner-slider'>
+              <Slider {...partners}>
+                <div className='partners-img'>
+                  <img src={p1} />
+                </div>
+                <div className='partners-img'>
+                  <img src={p2} />
+                </div>
+                <div className='partners-img'>
+                  <img src={p3} />
+                </div>
+                <div className='partners-img'>
+                  <img src={p1} />
+                </div>
+                <div className='partners-img'>
+                  <img src={p2} />
+                </div>
+                <div className='partners-img'>
+                  <img src={p3} />
+                </div>                
+              </Slider>
+              </div>
+            </div>
+          </Container>
+        </div>
+        <div className='try-sec'>
+          <Container>
+            <div className='try-text'>
+              <h6>Try Spatial for Free</h6>
+              <p>Seamlessly Connect From Any Platform</p>
+              <Link as="link" to="/" className='try-a'>
+              TRY FOR FREE
+              </Link>
+              <span>or</span>
+              <div className="apps-img">
+                <ul>
+                  <li>
+                    <a href='#'>
+                      <img src={oculus} />
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <img src={google} />
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <img src={apple} />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </Container>
         </div>
     </section >

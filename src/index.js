@@ -57,7 +57,7 @@ import $ from "jquery";
 //   }
 // }
 ReactDOM.render(
-  <BrowserRouter basename="/">
+  <BrowserRouter basename="/meta-martian">
       <div className='bg-video'>
       <video loop autoplay="" muted>
   <source src={video} type="video/mp4" />

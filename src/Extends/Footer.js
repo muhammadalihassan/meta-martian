@@ -1,4 +1,4 @@
-import sitelogo from '../Assets/logo-main.png';
+import sitelogo from '../Assets/ftr-logo.png';
 import { Container, Row, Col, Form, Button, Navbar, Nav } from "react-bootstrap";
 import land from '../Assets/land.png';
 import map from '../Assets/map.png';
@@ -10,7 +10,7 @@ import ReactDOM, { render } from 'react-dom';
 import Section from './Switch.js'
 import ScrollToTop from './ScrollToTop';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid} from '@fortawesome/fontawesome-svg-core/import.macro';
+import { solid, brands} from '@fortawesome/fontawesome-svg-core/import.macro';
 
 // SITE LOGO
 
@@ -66,6 +66,138 @@ function Footer() {
       </a>
     </li>
   </ul>
+</div>
+<div className='top-ftr'>
+  <Container>
+    <Row>
+      <Col md={3}>
+        <div className='ftr-logo'>
+          <Link as="link" to="/"><img src={sitelogo} /></Link>
+        </div>
+      </Col>
+      <Col md={3}>
+        <div className='ftr-links-main'>
+          <ul className='ftr-links'>
+            <li>
+              <Link as="link" to="/">
+                news
+              </Link>
+            </li>
+            <li>
+              <Link as="link" to="/">
+                create
+              </Link>
+            </li>
+            <li>
+              <Link as="link" to="/">
+                market
+              </Link>
+            </li>
+            <li>
+              <Link as="link" to="/">
+                play
+              </Link>
+            </li>
+            <li>
+              <Link as="link" to="/">
+                whitepaper
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </Col>
+      <Col md={3}>
+        <div className='ftr-links-main'>
+          <ul className='ftr-links'>
+            <li>
+              <Link as="link" to="/">
+                map
+              </Link>
+            </li>
+            <li>
+              <Link as="link" to="/">
+                sand
+              </Link>
+            </li>
+            <li>
+              <Link as="link" to="/">
+                press
+              </Link>
+            </li>
+            <li>
+              <Link as="link" to="/">
+                partners
+              </Link>
+            </li>
+            <li>
+              <Link as="link" to="/">
+                terms of use
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </Col>
+      <Col md={3}>
+        <div className='ftr-links-main'>
+        <ul className='ftr-social'>
+            <li>
+              <a href="#">
+              <FontAwesomeIcon icon={brands('twitch')} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <FontAwesomeIcon icon={brands('instagram')} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <FontAwesomeIcon icon={brands('facebook')} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <FontAwesomeIcon icon={brands('twitter')} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+            </li>
+          </ul>
+          <ul className='ftr-links'>
+           
+            <li>
+              <Link as="link" to="/">
+                licenses
+              </Link>
+            </li>
+            <li>
+              <Link as="link" to="/">
+                privacy
+              </Link>
+            </li>
+            <li>
+              <Link as="link" to="/">
+                terms
+              </Link>
+            </li>
+            <li>
+              <Link as="link" to="/">
+                community guidlines
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </Col>
+    </Row>
+  </Container>
+</div>
+<div className='ftr-btm'>
+  <Container>
+    <p>2022 Meta martian, inc. ALL right reserved</p>
+  </Container>
 </div>
       {/* <ScrollToTop /> */}
     </div>

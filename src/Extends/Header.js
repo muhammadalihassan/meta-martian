@@ -5,13 +5,14 @@ import sitelogo from '../Assets/logo-main.png';
 
 import menu from '../Assets/menu.png';
 
-import { Navbar, Nav, Container, NavDropdown, Form, Button, Dropdown, FormControl } from 'react-bootstrap';
+import { Navbar, Nav, Container, NavDropdown, Form, Button, Row, Col } from 'react-bootstrap';
 import $ from 'jquery'
 import { Link, NavLink } from "react-router-dom";
 import Section from './Switch.js'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Marquee from "react-fast-marquee";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid, brands} from '@fortawesome/fontawesome-svg-core/import.macro';
 
 function Header() {
   const [expanded, setExpanded] = useState(false);
@@ -94,24 +95,143 @@ function Header() {
           </div>
         
           <Offcanvas show={show} onHide={handleClose} className="main-overlay-menu">
-            <div className='left-discord-marquee'>
-<Marquee>
-  I can be a React component, multiple React components, or just some text.
-</Marquee>
+            
+              <div className='join-discord'>
+            <marquee direction="up">
+              <h5><span>join us</span> 
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span>  
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span>  
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span>  
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span>  
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span> 
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span> 
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span> 
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span> 
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              </h5>
+              </marquee>
             </div>
-        <Offcanvas.Header closeButton>
+            <div className='main-overlay-body'>
+              <div className='menu-logo'>
+              <img src={sitelogo} />
+              </div>
+              
+              <Offcanvas.Header closeButton>
+        <div className='secondary-login'>
+            <ul>
+              <li>
+                <Link as="link" to="/">connect wallet</Link>
+              </li>
+            </ul>
+          </div>
         </Offcanvas.Header>
         <Offcanvas.Body>
         <div className='inner-menu'>
         <Nav >
-          <Nav.Link exact='true' href={'#home'} onClick={() => {document.getElementById("close-button").click()}}>Home</Nav.Link>
-                <Nav.Link exact='true' href={'#lore'} onClick={() => {document.getElementById("close-button").click()}}>land scale</Nav.Link>
-                <Nav.Link exact='true' href={'#road'} onClick={() => {document.getElementById("close-button").click()}}>jump in</Nav.Link>
-                <Nav.Link exact='true' href={'#team'} onClick={() => {document.getElementById("close-button").click()}}>docs</Nav.Link>
-                <Nav.Link exact='true' href={'#faq'} onClick={() => {document.getElementById("close-button").click()}}>blog</Nav.Link>            
+          <Nav.Link exact='true' href={'#home'} onClick={handleClose}>Home</Nav.Link>
+                <Nav.Link exact='true' href={'#lore'} onClick={handleClose}>land scale</Nav.Link>
+                <Nav.Link exact='true' href={'#road'} onClick={handleClose}>jump in</Nav.Link>
+                <Nav.Link exact='true' href={'#team'} onClick={handleClose}>docs</Nav.Link>
+                <Nav.Link exact='true' href={'#faq'} onClick={handleClose}>blog</Nav.Link>            
           </Nav>
+          <ul className='overlay-icons'>
+          <li>
+              <a href="#">
+              <FontAwesomeIcon icon={brands('twitch')} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <FontAwesomeIcon icon={brands('instagram')} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <FontAwesomeIcon icon={brands('facebook')} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <FontAwesomeIcon icon={brands('twitter')} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+            </li>
+          </ul>
         </div>
         </Offcanvas.Body>
+        </div>
+              <div className='join-discord discord-rgt'>
+            <marquee direction="up">
+              <h5><span>join us</span> 
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span>  
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span>  
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span>  
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span>  
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span> 
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span> 
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span> 
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              <span>join us</span> 
+              <a href="#">
+              <FontAwesomeIcon icon={brands('discord')} />
+              </a>
+              </h5>
+              </marquee>
+            </div>
+        
       </Offcanvas>
 
       </Container>
