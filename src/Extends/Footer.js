@@ -1,4 +1,4 @@
-import sitelogo from '../Assets/ftr-logo.png';
+import sitelogo from '../Assets/logo-main.png';
 import { Container, Row, Col, Form, Button, Navbar, Nav } from "react-bootstrap";
 import land from '../Assets/land.png';
 import map from '../Assets/map.png';

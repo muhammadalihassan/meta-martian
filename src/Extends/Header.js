@@ -51,8 +51,8 @@ function Header() {
         }
     return (
      
-      <div className='main-header header-section'>
-         <Container>
+      <div className='main-header'>
+         <Container fluid>
             <div className='logo-main'>
             <Link to="/"><img src={sitelogo} alt='' className='bimg-3'/></Link>
           </div>
